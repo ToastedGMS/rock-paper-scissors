@@ -5,16 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rock Paper Scissors!</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/8bit-wonder">
     </head>
     <body>
-        <div class="buttons">
-            <button class="choiceBtn">rock</button>
-            <button class="choiceBtn">paper</button>
-            <button class="choiceBtn">scissors</button>
+        <div class="container">
+            <div class="textContent">
+                <h1>Rock, Paper, Scissors!</h1>
+                <h2>To play, simply click one of the buttons.</h2>
+                <p>The game will play for 10 rounds, or until you or the CPU score 5 points! Good Luck!</p>
+            </div>
+            <div class="buttons">
+                <button class="choiceBtn" style="color: yellow;">rock</button>
+                <button class="choiceBtn" style="color: yellow;">paper</button>
+                <button class="choiceBtn" style="color: yellow;">scissors</button>
+            </div>
+            <div id="results"></div>
+            <div id="score"></div>
         </div>
-        <div id="results"></div>
-        <div id="score"></div>
     </body>
     <script src="index.js"></script>
+    <audio id="pacmanStartup" src="Pacman Start Sound Effect.mp3" autoplay></audio>
 
 </html>

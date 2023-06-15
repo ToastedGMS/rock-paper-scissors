@@ -2,6 +2,8 @@ let gameCounter = 0
 let playerScore = 0
 let computerScore = 0
 
+
+
 const getComputerChoice = () => {
   const options = ['rock', 'paper', 'scissors']
   const computerChoice = options[Math.floor(Math.random()*options.length)]
@@ -43,6 +45,7 @@ const checkWinner = () => {
 } 
 
 const results = document.querySelector('#results');
+results.style.cssText = 'color: yellow'
 
 let buttons = document.querySelectorAll('.choiceBtn');
 
@@ -62,4 +65,11 @@ buttons.forEach(function(button) {
     scoreDiv.textContent = scoreDisplay;
     winCheck.textContent = checkWinner();
   })
+});
+
+score.style.cssText = 'color: yellow' ;
+
+window.addEventListener('load', function() {
+  let audio = document.querySelector('#pacmanStartup');
+  audio.play();
 });
